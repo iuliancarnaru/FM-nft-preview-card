@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="icon"
       type="image/png"
@@ -15,7 +20,55 @@
     <title>Frontend Mentor | NFT preview card component</title>
   </head>
   <body>
-    Equilibrium #3429 Our Equilibrium collection promotes balance and calm.
-    0.041 ETH 3 days left Creation of Jules Wyvern
+    <section class="card">
+      <div class="card__image">
+        <img
+          width="302"
+          height="302"
+          src="images/image-equilibrium.jpg"
+          alt="nft cube"
+          srcset="images/image-equilibrium.jpg"
+        />
+      </div>
+      <div class="card__details">
+        <div class="card__heading">Equilibrium #3429</div>
+        <div class="card__details--text">
+          Our Equilibrium collection promotes balance and calm.
+        </div>
+        <div class="card__details--info">
+          <div class="card__details--info-price">
+            <object
+              data="images/icon-ethereum.svg"
+              width="11"
+              height="18"
+            ></object>
+            <span>0.041 ETH</span>
+          </div>
+          <div class="card__details--info-time">
+            <object
+              data="images/icon-clock.svg"
+              width="16"
+              height="16"
+            ></object>
+            <span>3 days left</span>
+          </div>
+        </div>
+      </div>
+      <div class="delimiter"></div>
+      <div class="card__author">
+        <div class="card__author--image">
+          <img
+            width="33"
+            height="33"
+            src="images/image-avatar.png"
+            alt="Jules Wyvern"
+            srcset="images/image-avatar.png"
+          />
+        </div>
+        <div class="card__author--name">
+          Creation of <span>Jules Wyvern</span>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
