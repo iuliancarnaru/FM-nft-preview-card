@@ -103,6 +103,7 @@ body {
   font-weight: 300;
   margin-bottom: 2.4rem;
   color: var(--color-soft-blue);
+  line-height: 2.6rem;
 }
 
 .card__details--info {
